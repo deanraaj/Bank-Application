@@ -42,7 +42,7 @@ This is a Spring Boot-based Bank Application that provides REST APIs for:
   * `git clone https://github.com/deanraaj/Bank-Application.git`
   * `cd Bank-Application`
 
-## Configure Database
+### Configure Database
 * Update application.properties with your MySQL database credentials:
 properties
 ```
@@ -51,6 +51,8 @@ spring.datasource.username=root
 spring.datasource.password=yourpassword
 spring.jpa.hibernate.ddl-auto=update
 ```
+### Run the Application (bash)
+`mvn spring-boot:run`
 
 ### 📧 Email Notifications
 Users receive real-time email notifications for:

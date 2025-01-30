@@ -29,10 +29,10 @@ This is a Spring Boot-based Bank Application that provides REST APIs for:
 * POST	/api/login	Login and get JWT Token. (Auth 	❌ Not Required)
 
 ##### Bank Account APIs
-Get	/api/user/name	 Get Account Name. (✅ Requires JWT)
-GET	/api/user/balance	Get Balance details. 	(✅ Requires JWT)
+* GET	/api/user/name	 Get Account Name. (✅ Requires JWT)
+* GET	/api/user/balance	Get Balance details. 	(✅ Requires JWT)
 
 ##### Transaction APIs
-POST	/api/transactions/credit	Credit money into an account	✅ Requires JWT
-POST	/api/transactions/debit	Debit money from an account	✅ Requires JWT
-POST	/api/transactions/transfer	Transfer money between accounts	✅ Requires JWT
+* POST	/api/user/credit	Credit money into an account. (✅ Requires JWT)
+* POST	/api/user/debit	Debit money from an account.	(✅ Requires JWT)
+* POST	/api/user/transfer	Transfer money between accounts.	(✅ Requires JWT)

@@ -37,11 +37,20 @@ This is a Spring Boot-based Bank Application that provides REST APIs for:
 * POST	/api/user/debit	Debit money from an account.	(✅ Requires JWT)
 * POST	/api/user/transfer	Transfer money between accounts.	(✅ Requires JWT)
 
-  🏗️ Project Setup
-1️⃣ Clone the Repository
+### 🏗️ Project Setup
+###### Clone the Repository
+  * `git clone https://github.com/deanraaj/Bank-Application.git`
+  * `cd Bank-Application`
 
-`git clone https://github.com/deanraaj/Bank-Application.git`
-`cd Bank-Application`
+## Configure Database
+* Update application.properties with your MySQL database credentials:
+properties
+```
+spring.datasource.url=jdbc:mysql://localhost:3306/bank_db
+spring.datasource.username=root
+spring.datasource.password=yourpassword
+spring.jpa.hibernate.ddl-auto=update
+```
 
 ### 📧 Email Notifications
 Users receive real-time email notifications for:
